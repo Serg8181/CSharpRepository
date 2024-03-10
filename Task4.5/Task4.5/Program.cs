@@ -3,18 +3,13 @@
 наличии/отсутствии у пользователя питомца, возрасте пользователя, трех любимых цветах пользователя.*/
 
 using System;
-using System.Linq.Expressions;
-using System.Xml.Linq;
+
 
 class MainClass
 {
 
     static void Main(string[] args)
     {
-
-
-
-
         //Задание 4.5.1
         //Задайте кортеж User, который описывает необходимую информацию.
 
@@ -45,6 +40,7 @@ class MainClass
             if (Console.ReadLine() == "Да")
             {
                 User.isAnimal = true;
+                
             }
             else
             {
@@ -67,11 +63,8 @@ class MainClass
             //Задание 4.5.6
             //Сделайте так, чтобы опрос повторялся для трех пользователей.
 
-
-
         }
 
     }
-
 
 }
