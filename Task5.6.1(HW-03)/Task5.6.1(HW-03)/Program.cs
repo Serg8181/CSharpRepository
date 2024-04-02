@@ -94,19 +94,20 @@ namespace Task5._6._1_HW_03_
         {
             if (int.TryParse(number, out int intnum))
             {
+                // если результат число, тогда проверяем больше нуля или меньше
                 if(intnum > 0)
                 {
                     num = intnum;
                     return false;
                 }
-                else
+                else // возраст, количество животных, количество цветов не может быть нулевым значением
                 {
                     Console.WriteLine("Значение  не может быть нулевым или отрицательным. Поптробуйте еще раз.");
                     num = 0;
                     return true;
                 }
             }
-            else
+            else // если результат не число
             {
                 Console.WriteLine("Вы ввели некорректные данные. Введите значение цифрами.");
                 num = 0;
@@ -120,7 +121,7 @@ namespace Task5._6._1_HW_03_
         static string[] EnterAnimalName(int count)
         {
             var names = new string[count];
-            for (int i = 0 ; i < count ; i++)
+            for (int i = 0 ; i < names.Length ; i++)
             {
                 Console.WriteLine($"Введите кличку {i+1} животного: ");
                 names[i] = Console.ReadLine();
